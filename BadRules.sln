@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkIssues", "EntityFrameworkIssues\EntityFrameworkIssues.csproj", "{159DF3CD-BC6D-4615-9540-50C99C818400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreIssues", "EFCoreIssues\EFCoreIssues.csproj", "{AE8230CE-1A04-42C2-B42B-92882A2421CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BadRulesProject", "BadRules\BadRulesProject.csproj", "{285B180F-A9B5-4BF2-8A04-C3FDFF3D2F97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{159DF3CD-BC6D-4615-9540-50C99C818400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159DF3CD-BC6D-4615-9540-50C99C818400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159DF3CD-BC6D-4615-9540-50C99C818400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159DF3CD-BC6D-4615-9540-50C99C818400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE8230CE-1A04-42C2-B42B-92882A2421CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8230CE-1A04-42C2-B42B-92882A2421CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8230CE-1A04-42C2-B42B-92882A2421CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8230CE-1A04-42C2-B42B-92882A2421CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{285B180F-A9B5-4BF2-8A04-C3FDFF3D2F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285B180F-A9B5-4BF2-8A04-C3FDFF3D2F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285B180F-A9B5-4BF2-8A04-C3FDFF3D2F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285B180F-A9B5-4BF2-8A04-C3FDFF3D2F97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
