@@ -2,5 +2,3 @@ version: "1.0"
 
 profile:
   name: qodana.recommended
-
-bootstrap: cd /data/project; dotnet build -bl; cp *.binlog /data/results
