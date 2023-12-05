@@ -23,9 +23,9 @@ jobs:
           password: ${{ secrets.SPACE_REGISTRY_PASSWORD }}
 
       - name: Qodana Scan
-        uses: JetBrains/qodana-action@main
+        uses: JetBrains/qodana-action@2023.2.9
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
         with:
-          args: "--linter,registry.jetbrains.team/p/sa/containers/qodana-dotnet:2023.2-nightly"
+          args: "--linter,jetbrains/qodana-dotnet:2023.3-eap"
           pr-mode: false
