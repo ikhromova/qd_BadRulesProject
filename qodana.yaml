@@ -1,7 +1,25 @@
 version: "1.0"
-
-profile:
-  name: qodana.recommended
-
+linter: registry.jetbrains.team/p/sa/containers/qodana-dotnet:2024.3-nightly
+bootstrap: |
+  dotnet build; 
+  cd Tests
+  dotnet add package coverlet.msbuild
+  dotnet add package coverlet.collector
+  dotnet test /p:CollectCoverage=true /p:CoverletOutput=.qodana/code-coverage /p:CoverletOutputFormat=lcov
+include:
+  - name: NetCoverageInspection
+exclude:
+  - name: All
+    paths:
+      - BadRules/Class1.cs
+  - name: NotAccessedVariable.Compiler
+failureConditions:
+  severityThresholds:
+    moderate: 1
+    high: 1
+    critical: 0
+  testCoverageThresholds: 
+    total: 12
+    fresh: 80
 dotnet:
   solution: BadRules.sln
