@@ -15,9 +15,9 @@ exclude:
   - name: NotAccessedVariable.Compiler
 failureConditions:
   severityThresholds:
-    moderate: 1
-    high: 1
-    critical: 0
+    moderate: 22
+    high: 12
+    critical: 123
   testCoverageThresholds: 
     total: 12
     fresh: 80

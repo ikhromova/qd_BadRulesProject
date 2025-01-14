@@ -18,6 +18,19 @@ public class UnitTest1
         Assert.Equal(8, result);
     }
     
+    [Fact] // A single, independent test case
+    public void Add_TwoPositiveNumbers_ReturnsCorrectSum2()
+    {
+        // Arrange
+        var calculator = new Calculator();
+
+        // Act
+        var result = calculator.Add2(5, 3);
+
+        // Assert
+        Assert.Equal(8, result);
+    }
+    
     
     [Theory] // Data-driven test case with multiple inputs
     [InlineData(6, 2, 3)]
