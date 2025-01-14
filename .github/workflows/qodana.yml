@@ -33,7 +33,7 @@ jobs:
 
       - name: Run tests with code coverage
         run: dotnet test /p:CollectCoverage=true /p:CoverletOutput=../.qodana/code-coverage/ /p:CoverletOutputFormat=lcov
-        working-directory: NET/coverlet
+        working-directory: Tests
 
       - name: Archive coverage data
         uses: actions/upload-artifact@v4
