@@ -18,6 +18,19 @@ public class UnitTest1
         Assert.Equal(8, result);
     }
     
+    [Fact] // A single, independent test case
+    public void Add_TwoPositiveNumbers_ReturnsCorrectSum2()
+    {
+        // Arrange
+        var calculator = new Calculator();
+
+        // Act
+        var result = calculator.Add2(5, 3);
+
+        // Assert
+        Assert.Equal(8, result);
+    }
+    
     
     [Theory] // Data-driven test case with multiple inputs
     [InlineData(6, 2, 3)]
@@ -30,6 +43,22 @@ public class UnitTest1
 
         // Act
         var result = calculator.Divide(a, b);
+
+        // Assert
+        Assert.Equal(expected, result);
+    }
+    
+    [Theory] // Data-driven test case with multiple inputs
+    [InlineData(6, 2, 3)]
+    [InlineData(10, 2, 5)]
+    [InlineData(15, 5, 3)]
+    public void Divide_ValidInputs_ReturnsCorrectQuotient2(int a, int b, int expected)
+    {
+        // Arrange
+        var calculator = new Calculator();
+
+        // Act
+        var result = calculator.Divide2(a, b);
 
         // Assert
         Assert.Equal(expected, result);
