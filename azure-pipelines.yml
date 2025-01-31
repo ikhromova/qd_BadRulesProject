@@ -18,3 +18,4 @@ steps:
       uploadResult: true
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
+      QODANA_ENDPOINT: 'https://qodana.cloud'
