@@ -18,8 +18,8 @@ steps:
       ls -al
     displayName: "Debug Current Directory (Linux/macOS)"
   - task: QodanaScan@2024
+    env: 
+      QODANA_TOKEN: $(QODANA_TOKEN_QA)
     inputs:
       args: '--config,qodana.yaml'
       uploadResult: true
-    env: 
-      QODANA_TOKEN: $(QODANA_TOKEN_QA)
