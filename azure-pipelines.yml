@@ -12,10 +12,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+  - script: |
+      echo "Current Directory: $(System.DefaultWorkingDirectory)"
+      pwd
+      ls -al
+    displayName: "Debug Current Directory (Linux/macOS)"
   - task: QodanaScan@2024
     inputs:
-      args: --config,qodana.yaml
+      args: '--config,qodana.yaml,--ide,QDNET'
       uploadResult: true
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
-      QODANA_ENDPOINT: 'https://qodana.cloud'
