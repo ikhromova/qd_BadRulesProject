@@ -19,7 +19,7 @@ failureConditions:
     high: 12
     critical: 123
   testCoverageThresholds: 
-    total: 12
-    fresh: 80
+    total: 99
+    fresh: 98
 dotnet:
   solution: BadRules.sln
