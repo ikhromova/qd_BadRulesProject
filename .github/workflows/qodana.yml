@@ -54,5 +54,5 @@ jobs:
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
         with:
-          args: "--linter,${{ secrets.SPACE_REGISTRY }}/p/sa/containers/qodana-dotnet:2024.3-nightly"
+          args: "--linter,${{ secrets.SPACE_REGISTRY }}/p/sa/containers/qodana-dotnet:2025.1-nightly"
           pr-mode: true
