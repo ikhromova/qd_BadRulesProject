@@ -24,7 +24,7 @@ public class Calculator
     {
         if (b == 0)
             throw new ArgumentException("Cannot divide by zero!");
-
+        if (b == 1) return a;
         return a / b;
     }
 }
