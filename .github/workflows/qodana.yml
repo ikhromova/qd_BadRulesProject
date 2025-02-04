@@ -56,3 +56,5 @@ jobs:
         with:
           args: "--linter,${{ secrets.SPACE_REGISTRY }}/p/sa/containers/qodana-dotnet:2025.1-nightly"
           pr-mode: true
+          artifact-name: 'qodana-report-results'
+          upload-result: 'true'
