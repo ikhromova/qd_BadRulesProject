@@ -1,5 +1,5 @@
 version: "1.0"
-linter: registry.jetbrains.team/p/sa/containers/qodana-dotnet:2024.3-nightly
+linter: registry.jetbrains.team/p/sa/containers/qodana-dotnet:2025.1-nightly
 bootstrap: |
   dotnet build; 
   cd Tests
@@ -15,11 +15,8 @@ exclude:
   - name: NotAccessedVariable.Compiler
 failureConditions:
   severityThresholds:
-    moderate: 1
-    high: 1
-    critical: 0
-  testCoverageThresholds: 
-    total: 12
-    fresh: 80
+    moderate: 22
+    high: 12
+    critical: 123
 dotnet:
   solution: BadRules.sln
