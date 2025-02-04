@@ -1,5 +1,5 @@
 version: "1.0"
-linter: registry.jetbrains.team/p/sa/containers/qodana-dotnet:2024.3-nightly
+linter: registry.jetbrains.team/p/sa/containers/qodana-dotnet:2025.1-nightly
 bootstrap: |
   dotnet build; 
   cd Tests
