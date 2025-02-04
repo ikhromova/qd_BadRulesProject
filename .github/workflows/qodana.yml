@@ -58,3 +58,4 @@ jobs:
           pr-mode: true
           artifact-name: 'qodana-report-results'
           upload-result: 'true'
+          use-caches: 'false'
