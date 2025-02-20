@@ -22,6 +22,16 @@ class MultiThreadedComponent
       // do work
     }
   }
+  
+  public void PublicApi02werwer()
+  {
+    lock (_resource2)
+    {
+      // do work
+      HelperMethod02();
+      // do work
+    }
+  }
 
   private void HelperMethod02()
   {

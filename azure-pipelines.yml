@@ -22,6 +22,7 @@ steps:
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
     inputs:
       args: '--config,qodana.yaml,--apply-fixes'
+      pushFixes: "pull-request"
       uploadResult: true
       prMode: true
       useNightly: true
