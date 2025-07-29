@@ -21,7 +21,7 @@ steps:
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
     inputs:
-      args: '--config,qodana.yaml,'
+      args: '--config,qodana.yaml,--ide,QDNET'
       uploadResult: true
       prMode: true
       useNightly: true
