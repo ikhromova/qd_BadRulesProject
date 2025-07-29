@@ -17,7 +17,7 @@ steps:
       pwd
       ls -al
     displayName: "Debug Current Directory (Linux/macOS)"
-  - task: QodanaScan@2024
+  - task: QodanaScan@2025
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
     inputs:
