@@ -24,3 +24,4 @@ steps:
       args: '--config,qodana.yaml,--ide, QDNET'
       uploadResult: true
       prMode: true
+      useNightly: true
