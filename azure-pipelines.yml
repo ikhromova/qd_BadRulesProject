@@ -21,6 +21,6 @@ steps:
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
     inputs:
-      args: '--config,qodana.yaml,--linter,jetbrains/qodana-dotnet:2025.2-eap'
+      args: '--config,qodana.yaml,--ide, QDNET'
       uploadResult: true
       prMode: true
