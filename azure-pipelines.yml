@@ -16,7 +16,7 @@ steps:
       echo "Current Directory: $(System.DefaultWorkingDirectory)"
       pwd
       ls -al
-    displayName: "Debug Current Directory (Linux/macOS)"
+    displayName: "Debug The Current Directory (Linux/macOS)"
   - task: QodanaScan@2025
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
