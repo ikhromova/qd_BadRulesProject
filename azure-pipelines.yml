@@ -23,4 +23,5 @@ steps:
     inputs:
       args: '--config,qodana.yaml,--ide, QDNET'
       uploadResult: true
+      artifactName: qqqqqoad
       prMode: true
