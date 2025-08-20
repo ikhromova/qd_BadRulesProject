@@ -9,18 +9,19 @@ pr:
       - '*'
 
 pool:
-  vmImage: windows-latest
+  vmImage: macOS-latest
 
 steps:
   - script: |
       echo "Current Directory: $(System.DefaultWorkingDirectory)"
       pwd
       ls -al
-    displayName: "Debug Current Directory (Linux/macOS)"
-  - task: QodanaScan@2024
+    displayName: "Debug The () Current Directory (Linux/macOS)"
+  - task: QodanaScan@2025
     env: 
       QODANA_TOKEN: $(QODANA_TOKEN_QA)
     inputs:
-      args: '--config,qodana.yaml,--ide,QDNET'
+      args: '--config,qodana.yaml,--ide, QDNET'
       uploadResult: true
+      artifactName: qqqqqoad
       prMode: true

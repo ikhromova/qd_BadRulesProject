@@ -4,7 +4,15 @@ public class TypeCheckAndCast {
         if (obj is string)
         {
             string str = (string) obj;
-            // do something
+            if (true) {
+
+
+
+
+
+
+                
+            }
         }
     }
 }
