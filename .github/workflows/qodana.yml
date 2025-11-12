@@ -54,5 +54,8 @@ jobs:
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
         with:
-          args: "--linter,${{ secrets.SPACE_REGISTRY }}/p/sa/containers/qodana-dotnet:2025.1-nightly"
+          args: --image,registry.jetbrains.team/p/sa/containers/qodana-cdnet:2025.2-nightly
           pr-mode: true
+          artifact-name: 'qodana-report-results'
+          upload-result: 'true'
+          use-caches: 'false'

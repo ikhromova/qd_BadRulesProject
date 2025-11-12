@@ -36,6 +36,7 @@ public class UnitTest1
     [InlineData(6, 2, 3)]
     [InlineData(10, 2, 5)]
     [InlineData(15, 5, 3)]
+    [InlineData(15, 1, 15)]
     public void Divide_ValidInputs_ReturnsCorrectQuotient(int a, int b, int expected)
     {
         // Arrange
